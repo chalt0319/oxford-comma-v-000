@@ -1,4 +1,9 @@
 def oxford_comma(array)
- array.join
- array.join(" and ")
+  case array.length 
+    when 1 
+      array.join
+    when 2 
+      array.join(" and ")
+    when >= 3 
+      array.join(", ").push 
 end
